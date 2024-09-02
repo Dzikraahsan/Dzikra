@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aritmatika Javascript</title>
+</head>
+<body href="styles.css" href="script.js">
+    <h1>Performing Arithmetic Operation</h1>
+    <p id = 'add'> Addition</p>
+    <p id = 'sub'> Subtraction</p>
+    <p id = 'mul'> Multipication</p>
+    <P id = 'div'> Division</P>
+    <p id = 'mod'> Modulus</p>
+<script>
+    var a = 12, b = 13;
+    var add, sub, mul, div, mod;
+
+    add = a + b; 
+    add = a - b;
+    add = a * b;
+    add = a / b;
+    add = a % b;
+
+    document.getElementById("add").innerHTML = "Addition of" + a +' and ' + b +" is = " + add;
+    document.getElementById("add").innerHTML = "Subtraction of" + a +' and ' + b +" is = " + sub;
+    document.getElementById("add").innerHTML = "Multipication of" + a +' and ' + b +" is = " + mul;
+    document.getElementById("add").innerHTML = "Division of" + a +' and ' + b +" is = " + div;
+    document.getElementById("add").innerHTML = "Modulus of" + a +' and ' + b +" is = " + mod;
+</script> 
+</body>
+</html>

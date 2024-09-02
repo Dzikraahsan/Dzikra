@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Siswa</title>
+    <style>
+        html {
+            font-size: 25px;
+        }
+        body {
+            font-family: sans-serif;
+            font-size: 1em;
+            line-height: 1.4;
+            color: #444;
+        }
+        .table-wrapper {
+            overflow: auto;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .table-siswa, .table-date {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .table-siswa td {
+            border: 5px solid rgb(10, 10, 10);
+            position: relative;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="text-center">
+        Absensi Siswa Kelas XI RPL 1 <br>
+    </h2>
+
+    <div class="table-wrapper">
+
+        <table class="table-siswa" border="5">
+            <thead>
+                <tr>
+                    <td rowspan="2">No</td>
+                    <td rowspan="2">Nama</td>
+                    <td rowspan="2">L/P</td>
+                    <td rowspan="2">ID</td>
+                </tr>
+            </thead>
+            <tbody class="table-body-conten"></tbody>
+                <tr data-id="001">
+                    <td>1</td>
+                    <td>ADE NURMILASARI</td>
+                    <td>p</td>
+                    <td>001</td>
+                </tr>
+                <tr data-id="002">
+                    <td>2</td>
+                    <td>AEP SAEPUDIN ANWAR</td>
+                    <td>L</td>
+                    <td>002</td>
+                </tr>
+                <tr data-id="003">
+                    <td>3</td>
+                    <td>AGUNG PRASETIO</td>
+                    <td>L</td>
+                    <td>003</td>
+                </tr>
+                <tr data-id="004">
+                    <td>4</td>
+                    <td>AINI RIZKA NUR AFIFAH</td>
+                    <td>P</td>
+                    <td>004</td>
+                </tr>
+                <tr data-id="005">
+                    <td>5</td>
+                    <td>ANITA LUVITA</td>
+                    <td>P</td>
+                    <td>005</td>
+                </tr>
+                <tr data-id="006">
+                    <td>6</td>
+                    <td>ARIMA RAHAYU</td>
+                    <td>P</td>
+                    <td>006</td>
+                </tr>
+                <tr data-id="007">
+                    <td>7</td>
+                    <td>ASIS MAULANA</td>
+                    <td>L</td>
+                    <td>007</td>
+                </tr>
+                <tr data-id="008">
+                    <td>8</td>
+                    <td>BALQIS HANIFA</td>
+                    <td>P</td>
+                    <td>008</td>
+                </tr>
+                <tr data-id="009">
+                    <td>9</td>
+                    <td>DAFFA ISLAMY PASHAA</td>
+                    <td>L</td>
+                    <td>009</td>
+                </tr>
+                <tr data-id="010">
+                    <td>10</td>
+                    <td>DEDE YUSUF NUR KHOLIK</td>
+                    <td>L</td>
+                    <td>010</td>
+                </tr>
+                <tr data-id="011">
+                    <td>11</td>
+                    <td>DHERA FRASETYO S</td>
+                    <td>L</td>
+                    <td>011</td>
+                </tr>
+                <tr data-id="012">
+                    <td>12</td>
+                    <td>DIANDRA FAUZI RAMADHANI</td>
+                    <td>L</td>
+                    <td>012</td>
+                </tr>
+                <tr data-id="013">
+                    <td>13</td>
+                    <td>DZIKRA AHSAN IMAWAN</td>
+                    <td>L</td>
+                    <td>013</td>
+                </tr>
+                <tr data-id="014">
+                    <td>14</td>
+                    <td>GEASTRID DWY DESTRIAN</td>
+                    <td>P</td>
+                    <td>014</td>
+                </tr>
+                <tr data-id="015">
+                    <td>15</td>
+                    <td>GHEFIRA NUR FATIMAH</td>
+                    <td>P</td>
+                    <td>015</td>
+                </tr>
+                <tr data-id="016">
+                    <td>16</td>
+                    <td>JANTRA REISA ALFAYIZ SUPRIATNA</td>
+                    <td>L</td>
+                    <td>016</td>
+                </tr>
+                <tr data-id="017">
+                    <td>17</td>
+                    <td>KEISYA RAMADHINA PUTRI</td>
+                    <td>P</td>
+                    <td>017</td>
+                </tr>  
+                <tr data-id="018">
+                    <td>18</td>
+                    <td>LUTHFI FADHILLATUN RAMADAN</td>
+                    <td>L</td>
+                    <td>018</td>
+                </tr> 
+                <tr data-id="019">
+                    <td>19</td>
+                    <td>MUHAMMAD FARHAN HIBATULLAH</td>
+                    <td>L</td>
+                    <td>019</td>
+                </tr>                             
+                <tr data-id="20">
+                    <td>20</td>
+                    <td>MUHAMMAD FAUZI RIDWAN</td>
+                    <td>L</td>
+                    <td>020</td>
+                </tr>                        
+                <tr data-id="21">
+                    <td>21</td>
+                    <td>MUHAMMAD IQBAL</td>
+                    <td>L</td>
+                    <td>021</td>
+                </tr>
+                <tr data-id="022">
+                    <td>22</td>
+                    <td>MUHAMMAD FAKHRI ALGHIFARI</td>
+                    <td>L</td>
+                    <td>022</td>
+                </tr> 
+                <tr data-id="023">
+                    <td>23</td>
+                    <td>MUHAMMAD HAIKAL AL MACCA</td>
+                    <td>L</td>
+                    <td>023</td>
+                </tr>  
+                <tr data-id="024">
+                    <td>24</td>
+                    <td>NABIL ALI WIBOWO</td>
+                    <td>L</td>
+                    <td>024</td>
+                </tr>
+                <tr data-id="025">
+                    <td>25</td>
+                    <td>NESYRIN SYAHARANI FAZRI</td>
+                    <td>P</td>
+                    <td>025</td>
+                </tr>                          
+                <tr data-id="026">
+                    <td>26</td>
+                    <td>NURIDA SUSAN NIARDJIE</td>
+                    <td>P</td>
+                    <td>026</td>
+                </tr> 
+                <tr data-id="027">
+                    <td>27</td>
+                    <td>PRADITYA TRI ANNISAA</td>
+                    <td>P</td>
+                    <td>027</td>
+                </tr> 
+                <tr data-id="28">
+                    <td>28</td>
+                    <td>RAHMANIAH AL PRIATNA</td>
+                    <td>P</td>
+                    <td>028</td>
+                </tr>          
+                <tr data-id="29">
+                    <td>29</td>
+                    <td>RAKHA MUHAMMAD FATAN</td>
+                    <td>L</td>
+                    <td>029</td>
+                </tr>                        
+                <tr data-id="030">
+                    <td>30</td>
+                    <td>REZA SUBAGJA</td>
+                    <td>L</td>
+                    <td>030</td>
+                </tr> 
+                <tr data-id="031">
+                    <td>31</td>
+                    <td>SITI FAZRI AROHMAH</td>
+                    <td>P</td>
+                    <td>030</td>
+                </tr>                  
+                <tr data-id="032">
+                    <td>32</td>
+                    <td>SUSILAWATI</td>
+                    <td>P</td>
+                    <td>032</td>
+                </tr>
+                <tr data-id="033">
+                    <td>33</td>
+                    <td>SUTINI NURAENI ELI HANDAYANI</td>
+                    <td>P</td>
+                    <td>033</td>
+                </tr> 
+                <tr data-id="034">
+                    <td>34</td>
+                    <td>TITA SUMARNI</td>
+                    <td>P</td>
+                    <td>034</td>
+                </tr>
+                <tr data-id="035">
+                    <td>35</td>
+                    <td>VIKA EVANTHI</td>
+                    <td>P</td>
+                    <td>035</td>
+                </tr>
+                <tr data-id="036">
+                    <td>36</td>
+                    <td>WULANSARI</td>
+                    <td>P</td>
+                    <td>036</td>
+                </tr>              
+            </tbody>
+        </table>
+
+    <script>
+        /* json file example
+[
+  {
+    "id" : 001,
+	"name" : "ADE NURMILASARI",
+    "gender" "P",
+  },
+  {
+  	"id" : 002,
+    "name" : "AEP SAEPUDIN ANWAR",
+    "gender" "L",
+  },
+  {
+  	"id" : 003,
+    "name" : "AGUNG PRASETIO",
+    "gender" "L",
+  },
+  {
+  	"id" : 004,
+    "name" : "AINI RIZKA NUR AFIFAH",
+    "gender" "P",
+  },
+ {
+  	"id" : 005,
+    "name" : "ANITA LUVITA",
+    "gender" "P",
+  },
+  {
+  	"id" : 006,
+    "name" : "ARIMA RAHAYU",
+    "gender" "P",
+  },
+  {
+  	"id" : 007,
+    "name" : "ASIS MAULANA",
+    "gender" "L",
+  },
+  {
+  	"id" : 008,
+    "name" : "BALQIS HANIFA",
+    "gender" "P",
+  },
+  {
+  	"id" : 009,
+    "name" : "DAFFA ISLAMY PASHAA",
+    "gender" "L",
+  },
+  {
+  	"id" : 010,
+    "name" : "DEDE YUSUF NUR KHOLIK",
+    "gender" "L",
+  },
+  {
+  	"id" : 011,
+    "name" : "DHERA FRASETYO S.",
+    "gender" "L",
+  },
+  {
+  	"id" : 012,
+    "name" : "DIANDRA FAUZI RAMADHANI",
+    "gender" "L",
+  },
+  {
+  	"id" : 013,
+    "name" : "DZIKRA AHSAN IMAWAN",
+    "gender" "L",
+  },
+  {
+  	"id" : 014,
+    "name" : "GEASTRID DWY DESTRIAN",
+    "gender" "P",
+  },
+  {
+  	"id" : 015,
+    "name" : "GHEFIRA NUR FATIMAH",
+    "gender" "P",
+  },
+  {
+  	"id" : 016,
+    "name" : "JANTRA REISA ALFAYIZ SUPRIATNA",
+    "gender" "L",
+  },
+  {
+  	"id" : 017,
+    "name" : "KEISYA RAMADHINA PUTRI",
+    "gender" "p",
+  },
+  {
+  	"id" : 018,
+    "name" : "LUTHFI FADHILLATUN RAMADAN",
+    "gender" "L",
+  },
+  {
+  	"id" : 019,
+    "name" : "MUHAMMAD FARHAN HIBATULLAH",
+    "gender" "L",
+  },
+  {
+  	"id" : 020,
+    "name" : "MUHAMMAD FAUZI RIDWAN",
+    "gender" "L",
+  },
+  {
+  	"id" : 021,
+    "name" : "MUHAMMAD IQBAL",
+    "gender" "L",
+  },
+  {
+  	"id" : 022,
+    "name" : "MUHAMMAD FAKHRI ALGHIFARI",
+    "gender" "L",
+  },
+  {
+  	"id" : 023,
+    "name" : "MUHAMMAD HAIKAL AL MACCA",
+    "gender" "L",
+  },
+  {
+  	"id" : 024,
+    "name" : "NABIL ALI WIBOWO",
+    "gender" "L",
+  },
+  {
+  	"id" : 025,
+    "name" : "NESYRIN SYAHARANI FAZRI",
+    "gender" "P",
+  },
+  {
+  	"id" : 026,
+    "name" : "NURIDA SUSAN NIARDJIE",
+    "gender" "P",
+  },
+  {
+  	"id" : 027,
+    "name" : "PRADITYA TRI ANNISAA",
+    "gender" "P",
+  },
+  {
+  	"id" : 028,
+    "name" : "RAHMANIAH AL PRIATNA",
+    "gender" "P",
+  },
+  {
+  	"id" : 029,
+    "name" : "RAKHA MUHAMMAD FATAN",
+    "gender" "L",
+  },
+  {
+  	"id" : 030,
+    "name" : "REZA SUBAGJA",
+    "gender" "L",
+  },
+  {
+  	"id" : 031,
+    "name" : "SITI FAZRI AROHMAH",
+    "gender" "P",
+  },
+  {
+  	"id" : 032,
+    "name" : "SUSILAWATI",
+    "gender" "P",
+  },
+  {
+  	"id" : 033,
+    "name" : "SUTINI NURAENI ELI HANDAYANI",
+    "gender" "P",
+  },
+  {
+  	"id" : 034,
+    "name" : "TITA SUMARNI",
+    "gender" "P",
+  },
+  {
+  	"id" : 035,
+    "name" : "VIKA EVANTHI",
+    "gender" "P",
+  },
+  {
+  	"id" : 036,
+    "name" : "WULANSARI",
+    "gender" "P",
+  },
+]
+*/
+
+
+$(document).ready(function(){
+
+var tableDate = "";
+var tableContent =  "";
+var $td =  "";
+
+var $label ="<label class='label-checkbox'><input type='checkbox'/></label>";
+  
+for(var i=1; i<=31; i++){
+      tableDate += "<td class='td-date text-center'><b class='date'>"+ i +"</b></td>";
+  }
+  
+$( tableDate ).prependTo( ".table-row-head" );
+  
+
+for(var i=1; i<=31; i++){
+      tableContent += "<td class='text-center' data-date='"+ i +"'>"+ $label +"</td>";
+}
+
+$( tableContent ).appendTo( ".table-body-content tr" );
+  
+for(var td=1; td<=2; td++){
+      $td += "<td class='text-center' data-info='"+ td +"'</td>";
+}
+
+$( $td ).insertAfter( ".table-body-content td[data-date='31']" );
+
+
+$( document ).on( "change", ".label-checkbox", function(){
+  $( this ).toggleClass( "active" );
+  checkData();
+});
+  
+  
+});
+
+function checkData(){
+$( ".label-checkbox" ).each(function(){
+  var $parents  = $( this ).parents( "tr" );
+  var $checked      = $parents.find( "input:checked" ).length;
+  var $no_checked   = $parents.find( "input" ).length;
+  var $true = $checked;
+  var $false = [ $no_checked - $checked];
+
+  $parents.find( "[data-info='1']" ).html( $true );
+  $parents.find( "[data-info='2']" ).html( $false );   
+});
+}
+
+$( document ).ready(function(){
+checkData();
+});
+    </script>
+    </div>
+</body>
+</html>

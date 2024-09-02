@@ -1,0 +1,27 @@
+        ul li {
+            display: inline-block;
+            margin-right: 20px;
+            border: 1px blue;
+            padding: 1opx;
+            border-radius: 5px;
+        }
+        .header {
+            background-color: rgb(68, 218, 218);
+            height: 50px;
+            text-align: center;
+            margin: 10px;
+        }
+        .container {
+            background-color: cadetblue;
+            padding: 10px;
+            text-align: center;
+        }
+        .footer {
+            background-color: cornflowerblue;
+            padding: 25px;
+            text-align: center;
+        }
+        p{
+           overflow: auto;
+        }
+    
